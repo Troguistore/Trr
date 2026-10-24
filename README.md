@@ -1,4 +1,3 @@
-
 <html lang="es-CO">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://d39ru7awumhhs2.cloudfront.net">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --black:#14140f; --cream:#faf9f6; --white:#fff;
@@ -22,7 +21,7 @@
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 html,body{margin:0;padding:0;}
-body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--black);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+body{font-family:'Montserrat','Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--black);-webkit-font-smoothing:antialiased;overflow-x:hidden;letter-spacing:.01em;}
 img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;}
@@ -45,7 +44,7 @@ header.site-header{position:sticky;top:0;z-index:90;background:#fff;border-botto
 .logo-stamp{position:absolute;right:4px;bottom:-2px;font-weight:900;font-style:italic;font-size:.9rem;color:var(--black);transform:rotate(14deg);opacity:.88;font-family:Georgia,serif;}
 .menu-btn{width:38px;height:38px;border-radius:9px;background:var(--surface);color:var(--black);display:flex;align-items:center;justify-content:center;flex:none;}
 .header-spacer{flex:1;}
-.icon-btn{width:38px;height:38px;border-radius:9px;background:var(--surface);color:var(--black);display:flex;align-items:center;justify-content:center;flex:none;position:relative;}
+.icon-btn{width:32px;height:32px;border-radius:8px;background:var(--surface);color:var(--black);display:flex;align-items:center;justify-content:center;flex:none;position:relative;}
 .cart-badge{position:absolute;top:-5px;right:-5px;background:var(--orange);color:#fff;font-size:.62rem;font-weight:800;min-width:17px;height:17px;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;}
 .btn-catalogo{border:1.5px solid var(--black);color:var(--black);font-weight:700;font-size:.74rem;padding:8px 13px;border-radius:999px;white-space:nowrap;flex:none;}
 .search-row{max-width:1280px;margin:0 auto;padding:0 16px 10px;}
@@ -100,16 +99,20 @@ header.site-header{position:sticky;top:0;z-index:90;background:#fff;border-botto
 .badge-off{position:absolute;top:7px;left:7px;background:var(--orange);color:#fff;font-size:.65rem;font-weight:800;padding:3px 8px;border-radius:6px;}
 .badge-cat{position:absolute;top:7px;right:7px;background:rgba(20,20,15,.75);color:#fff;font-size:.6rem;font-weight:700;padding:3px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.03em;}
 .card-body{padding:10px 10px 12px;display:flex;flex-direction:column;gap:5px;flex:1;}
-.card-title{font-size:.8rem;font-weight:600;line-height:1.28;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer;min-height:2.3em;}
+.card-title{font-size:.8rem;font-weight:700;line-height:1.28;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer;min-height:2.3em;}
+.card-envio{color:#d8291d;font-weight:800;font-size:.66rem;letter-spacing:.02em;text-transform:uppercase;}
 .stars{color:#ffb400;font-size:.72rem;letter-spacing:1px;}
 .stars .count{color:var(--gray);font-size:.66rem;margin-left:3px;letter-spacing:0;}
 .price-row{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;}
-.price-now{color:var(--green-dark);font-weight:800;font-size:1.02rem;}
+.price-now{color:var(--black);font-weight:800;font-size:1.05rem;}
 .price-old{color:#9c9c94;text-decoration:line-through;font-size:.72rem;}
 .card-btns{display:flex;gap:6px;margin-top:2px;}
-.btn-mini{flex:1;text-align:center;padding:8px 4px;border-radius:9px;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:4px;}
-.btn-mini.buy{background:var(--orange);color:#fff;animation:shk 3.2s ease-in-out infinite;}
-.btn-mini.cart{background:var(--black);color:#fff;}
+.card-btns{align-items:stretch;}
+.btn-mini{text-align:center;padding:9px 4px;border-radius:8px;font-size:.72rem;font-weight:800;display:flex;align-items:center;justify-content:center;gap:4px;letter-spacing:.03em;}
+.btn-mini.buy{flex:2.4;background:var(--orange);color:#fff;text-transform:uppercase;}
+.btn-mini.cart{flex:1;background:var(--black);color:#fff;max-width:38px;}
+.btn-mini.cart .icon{width:14px;height:14px;}
+.btn-mini.buy.shake{animation:shk .6s ease-in-out 2;}
 @keyframes shk{0%,84%{transform:scale(1);}87%{transform:scale(1.04) rotate(-1deg);}90%{transform:scale(1.04) rotate(1deg);}93%{transform:scale(1.02);}100%{transform:scale(1);}}
 
 /* TRUST STRIP */
@@ -131,9 +134,9 @@ header.site-header{position:sticky;top:0;z-index:90;background:#fff;border-botto
 .gallery-main img{width:100%;height:100%;object-fit:cover;}
 .detail-title{font-size:1.3rem;font-weight:800;margin:0 0 6px;line-height:1.25;}
 .detail-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.8rem;color:var(--gray);margin-bottom:10px;}
-.detail-price-block{background:#f0fbf3;border:1px dashed var(--green);border-radius:12px;padding:14px 16px;margin-bottom:12px;}
+.detail-price-block{background:#f5f4ef;border:1px dashed var(--black);border-radius:12px;padding:14px 16px;margin-bottom:12px;}
 .detail-price-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
-.detail-price-now{font-size:1.8rem;font-weight:900;color:var(--green-dark);}
+.detail-price-now{font-size:1.8rem;font-weight:900;color:var(--black);}
 .detail-price-old{font-size:1rem;color:#9c9c94;text-decoration:line-through;}
 .savings{display:flex;align-items:center;gap:5px;font-size:.78rem;color:var(--green-dark);font-weight:700;margin-top:4px;}
 .select-block{margin-bottom:14px;}
@@ -193,7 +196,7 @@ footer{background:var(--black);color:#d9d9d0;margin-top:30px;padding:34px 16px 9
 /* FLOATING */
 .fab-whatsapp{position:fixed;bottom:84px;right:16px;z-index:80;width:54px;height:54px;background:var(--whats-green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.3);animation:wpulse 2s infinite;}
 @keyframes wpulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);}70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
-.mini-fab{position:fixed;bottom:16px;z-index:85;width:28px;height:28px;border-radius:50%;background:rgba(20,20,15,.1);border:1px solid rgba(20,20,15,.2);color:var(--black);font-size:.65rem;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.mini-fab{position:fixed;bottom:16px;z-index:85;width:30px;height:30px;border-radius:50%;background:#fff;border:1.5px solid var(--black);color:var(--black);font-size:.7rem;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.18);}
 .mini-fab.r{left:12px;}
 .mini-fab.p{left:46px;}
 
@@ -293,7 +296,15 @@ const CIUDADES_PRINCIPALES = ['bogota','medellin','cali','barranquilla','cartage
 'sincelejo','valledupar','soacha','envigado','itagui','bello','soledad','floridablanca','dosquebradas',
 'palmira','buenaventura','tulua','rionegro','chia','girardot','yopal','tunja','riohacha','quibdo','sogamoso'];
 
-const RAW_PRODUCTS = JSON.parse(document.getElementById('PRODUCTS_DATA').textContent);
+const RAW_PRODUCTS = JSON.parse(document.getElementById('PRODUCTS_DATA').textContent).map(p=>{
+  const n = normalizeTxt(p.name);
+  let genero = 'unisex';
+  if(/\bdama\b|\bmujer\b|\bfemenin/.test(n)) genero = 'dama';
+  else if(/\bcaballero\b|\bhombre\b|\bmasculin/.test(n)) genero = 'caballero';
+  else if(/\bnin[oa]\b|\binfantil\b|\bkids?\b/.test(n)) genero = 'ninos';
+  else if(/\bunisex\b/.test(n)) genero = 'unisex';
+  return {...p, genero};
+});
 
 const ICONS = {
   truck:'<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="14" height="10"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>',
@@ -368,10 +379,28 @@ function estimateDelivery(cityText){
   const isMain = CIUDADES_PRINCIPALES.some(c => norm.includes(c) || c.includes(norm));
   return isMain ? {min:3,max:5,main:true} : {min:3,max:7,main:false};
 }
+function levenshtein(a,b){
+  const m=a.length,n=b.length;
+  if(!m) return n; if(!n) return m;
+  const dp = Array.from({length:m+1},(_,i)=>[i,...Array(n).fill(0)]);
+  for(let j=0;j<=n;j++) dp[0][j]=j;
+  for(let i=1;i<=m;i++){
+    for(let j=1;j<=n;j++){
+      dp[i][j] = a[i-1]===b[j-1] ? dp[i-1][j-1] : 1+Math.min(dp[i-1][j-1],dp[i-1][j],dp[i][j-1]);
+    }
+  }
+  return dp[m][n];
+}
 function fuzzyIncludes(haystack, needle){
   haystack = normalizeTxt(haystack); needle = normalizeTxt(needle).trim();
   if(!needle) return true;
-  return haystack.includes(needle);
+  if(haystack.includes(needle)) return true;
+  const words = haystack.split(/[^a-z0-9]+/).filter(Boolean);
+  const needleWords = needle.split(/\s+/).filter(Boolean);
+  return needleWords.every(nw=>{
+    if(nw.length<3) return haystack.includes(nw);
+    return words.some(w=> w.includes(nw) || levenshtein(w,nw) <= (nw.length>=6?2:1));
+  });
 }
 function garantiaDias(id){ return (hashStr(id) % 2 === 0) ? 15 : 30; }
 
@@ -437,7 +466,7 @@ function renderCartModal(){
 }
 
 /* ---------- Estado / router ---------- */
-let STATE = { products: [], order: [], category:'todas', query:'' };
+let STATE = { products: [], order: [], category:'todas', genero:'todos', query:'' };
 function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 function currentRoute(){
   const hash = location.hash || '#/';
@@ -462,9 +491,12 @@ function orderedProducts(){
   const byId = Object.fromEntries(STATE.products.map(p=>[p.id,p]));
   let list = STATE.order.map(id=>byId[id]).filter(Boolean);
   if(STATE.category!=='todas') list = list.filter(p=>p.cat===STATE.category);
+  if(STATE.genero && STATE.genero!=='todos') list = list.filter(p=>p.genero===STATE.genero);
   if(STATE.query.trim()) list = list.filter(p=> fuzzyIncludes(p.name+' '+(CAT_LABELS[p.cat]||p.cat), STATE.query));
   return list;
 }
+function setGenero(g){ STATE.genero=g; render(); }
+const GENERO_LABELS = {todos:'Todos', dama:'Dama', caballero:'Caballero', ninos:'Niños', unisex:'Unisex'};
 function categoriesPresent(){ return [...new Set(STATE.products.map(p=>p.cat))]; }
 
 function renderHome(){
@@ -486,6 +518,7 @@ function renderHome(){
       </div>
     </div>
     <div class="cat-chips">${['todas',...cats].map(c=>`<button class="cat-chip ${STATE.category===c?'active':''}" onclick="setCategory('${c}')">${c==='todas'?'Todas':(CAT_LABELS[c]||c)}</button>`).join('')}</div>
+    <div class="cat-chips" style="margin-top:7px;">${['todos','dama','caballero','ninos','unisex'].map(g=>`<button class="cat-chip ${STATE.genero===g?'active':''}" onclick="setGenero('${g}')" style="${STATE.genero===g?'':'background:var(--surface);'}">${GENERO_LABELS[g]}</button>`).join('')}</div>
     <div class="section-title"><div>
       <h2>${STATE.category==='todas'?'Todos los <span>productos</span>':(CAT_LABELS[STATE.category]||STATE.category)}</h2>
       <p class="section-sub">${list.length} producto${list.length===1?'':'s'} disponible${list.length===1?'':'s'} · envío gratis a toda Colombia</p>
@@ -500,19 +533,22 @@ function renderHome(){
 }
 function emptyStateHtml(){ return `<div class="empty-state" style="grid-column:1/-1;">${ICONS.search}<p>No encontramos productos con esa búsqueda.</p></div>`; }
 
+function hasRating(id){ return (hashStr(id) % 10) < 6; }
 function cardHtml(p){
   const discount = p.oldPrice? pct(p.oldPrice,p.price):0;
-  return `<div class="card">
+  const showRating = hasRating(p.id);
+  return `<div class="card" data-pid="${p.id}">
     ${discount>0?`<span class="badge-off">-${discount}%</span>`:''}
     <span class="badge-cat">${CAT_LABELS[p.cat]||p.cat}</span>
     <div class="card-img-wrap" onclick="goToProduct('${p.id}')"><img src="${p.img}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMG}';"></div>
     <div class="card-body">
       <div class="card-title" onclick="goToProduct('${p.id}')">${escapeHtml(p.name)}</div>
-      <div class="stars">★★★★★ <span class="count">(${20+ (hashStr(p.id)%180)}+ vendidos)</span></div>
+      <div class="card-envio">Envío gratis</div>
+      ${showRating?`<div class="stars">★★★★★ <span class="count">(${20+ (hashStr(p.id)%180)}+ vendidos)</span></div>`:'<div style="height:.9rem;"></div>'}
       <div class="price-row"><span class="price-now">${money(p.price)}</span>${p.oldPrice?`<span class="price-old">${money(p.oldPrice)}</span>`:''}</div>
       <div class="card-btns">
+        <button class="btn-mini buy" id="buy-${p.id}" onclick="goToProduct('${p.id}')">Comprar</button>
         <button class="btn-mini cart" onclick="quickAdd('${p.id}')">${ICONS.cart}</button>
-        <button class="btn-mini buy" onclick="goToProduct('${p.id}')">Comprar</button>
       </div>
     </div>
   </div>`;
@@ -529,6 +565,33 @@ function doSearch(){ const el=document.getElementById('searchInput'); STATE.quer
 function bindGlobalEvents(){
   const input = document.getElementById('searchInput');
   if(input){ input.addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); }); input.addEventListener('input', debounce(()=>doSearch(),250)); }
+  startIdleShakeWatcher();
+}
+
+/* Sacuden el boton "Comprar" de la tarjeta que la persona lleva ~6s mirando sin interactuar */
+let IDLE_IO = null;
+function startIdleShakeWatcher(){
+  if(IDLE_IO) IDLE_IO.disconnect();
+  const timers = new Map();
+  IDLE_IO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const card = entry.target;
+      const pid = card.getAttribute('data-pid');
+      if(entry.isIntersecting && entry.intersectionRatio > 0.6){
+        if(!timers.has(pid)){
+          const t = setTimeout(()=>{
+            const btn = document.getElementById('buy-'+pid);
+            if(btn){ btn.classList.remove('shake'); void btn.offsetWidth; btn.classList.add('shake'); }
+          }, 6000);
+          timers.set(pid, t);
+        }
+      } else {
+        if(timers.has(pid)){ clearTimeout(timers.get(pid)); timers.delete(pid); }
+      }
+    });
+  }, {threshold:[0,0.6]});
+  document.querySelectorAll('.card[data-pid]').forEach(c=> IDL_OBSERVE(c));
+  function IDL_OBSERVE(c){ IDLE_IO.observe(c); }
 }
 function debounce(fn,wait){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a),wait); }; }
 
